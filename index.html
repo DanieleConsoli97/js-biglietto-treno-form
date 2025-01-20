@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <input id="datiAnagrafici" type="text" value="" placeholder="Inserisci  Nome e Cognome">
-    <input id="km_da_percorrere" type="text" value="" placeholder="Inserisci i km da percorrere">
-    <input id="età_passeggero" type="text" value="" placeholder="Inserisci la tua età">
-    <button id="bottone_genera">Genera biglietto</button>
+    <form class="">
+        <input id="dati_anagrafici" type="text" value="" placeholder="Inserisci  Nome e Cognome">
+        <input id="km_da_percorrere" type="text" value="" placeholder="Inserisci i km da percorrere">
+        <input id="età_passeggero" type="text" value="" placeholder="Inserisci la tua età">
+        <input type="button" id="bottone_genera" value="Genera il boglietto">
+
+    </form>
+    <div class="biglietto_container" >
+        <h4>Dettaglio Passeggeri</h4>
+        <div class="biglieto">
+            <div class="dati_anagrafici"></div>
+            <h3>nome passeggero</h3>
+        </div>
+        <div class="dati_biglietto" >
+            <div class="offerta">
+                <p>Offerta</p>
+            </div>
+            <div class="carrozza">
+                <p>Carrozza</p>
+            </div>
+            <div class="codice_cp">
+                <p>Numero Carrozza</p>
+            </div>
+            <div class="costo_biglietto">
+                <p>Costo Biglietto</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
