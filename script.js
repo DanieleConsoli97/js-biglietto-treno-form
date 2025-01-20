@@ -26,8 +26,7 @@ bottone.addEventListener("click", () => {
   }
   document.getElementById("valore_cp").innerHTML = generaNumeroCp;
   document.getElementById("numero_carrozza").innerHTML = generaNumeriCarrozza;
-  document.getElementById("tipo_offerta").innerHTML = "Biglietto standard";
-  document.getElementById(
+
     "prezzo_biglietto"
   ).innerHTML = `${prezzoFinaleBiglietto.toFixed(2)}€`;
   let bigliettoVisibile = document.getElementById(`biglietto_container`)
