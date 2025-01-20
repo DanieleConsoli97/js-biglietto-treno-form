@@ -25,7 +25,7 @@ bottone.addEventListener("click", () => {
 })
 
 function createResulBiglietto(){
- 
+    
 }
 
 
