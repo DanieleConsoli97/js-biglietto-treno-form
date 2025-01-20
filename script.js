@@ -23,6 +23,7 @@ bottone.addEventListener("click", () => {
     document.getElementById("tipo_offerta").innerHTML = "Biglietto ridotto";
   } else {
     prezzoFinaleBiglietto = prezzo;
+    document.getElementById("tipo_offerta").innerHTML = "Biglietto standard";
   }
   document.getElementById("valore_cp").innerHTML = generaNumeroCp;
   document.getElementById("numero_carrozza").innerHTML = generaNumeriCarrozza;
