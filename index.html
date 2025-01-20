@@ -10,39 +10,41 @@
 
 <body>
     <div class="container">
-        <form>
-            <input id="dati_anagrafici" type="text" value="" placeholder="Inserisci  Nome e Cognome">
-            <input id="km_da_percorrere" type="text" value="" placeholder="Inserisci i km da percorrere">
-            <input id="età_passeggero" type="text" value="" placeholder="Inserisci la tua età">
-            <input type="button" id="bottone_genera" value="Genera il boglietto">
-        </form>
+        <div class="card">
+            <form>
+                <input id="dati_anagrafici" type="text" value="" placeholder="Inserisci  Nome e Cognome">
+                <input id="km_da_percorrere" type="text" value="" placeholder="Inserisci i km da percorrere">
+                <input id="età_passeggero" type="text" value="" placeholder="Inserisci la tua età">
+                <input type="button" id="bottone_genera" value="Genera il biglietto">
+                <input type="button" id="bottone_annulla" value="Annulla">
+            </form>
 
-        <div class="biglietto_container">
-            <h4>Dettagli Passeggeri</h4>
-            <div id="biglietto">
-
-                <div id="dati_anagrafici">
-                    <h3>nome passeggero</h3>
-                    <p id="nome_passeggero"></p>
-                </div>
-
-                <div id="dati_biglietto">
-                    <div id="offerta">
-                        <p>Offerta</p>
-                        <p id="tipo_offerta"></p>
+            <div id="biglietto_container" class="invisible">
+                <h4>Il tuo biglietto</h4>
+                <div id="biglietto">
+                    <div id="dati_passeggero" class="textbox">
+                        <h3>Nome passeggero</h3>
+                        <p id="nome_passeggero"></p>
                     </div>
-                    <div id="carrozza">
-                        <p>Numero Carrozza</p>
-                        <p id="numero_carrozza"></p>
-                    </div>
-                    <div id="codice_cp">
-                        <p>Codice CP</p>
-                        <p id="valore_cp"></p>
 
-                    </div>
-                    <div id="costo_biglietto">
-                        <p>Costo Biglietto</p>
-                        <p id="prezzo_biglietto"></p>
+                    <div id="dati_biglietto">
+                        <div id="offerta" class="textbox text_box_size">
+                            <p>Offerta</p>
+                            <p id="tipo_offerta"></p>
+                        </div>
+                        <div id="carrozza" class="textbox text_box_size">
+                            <p>Numero Carrozza</p>
+                            <p id="numero_carrozza"></p>
+                        </div>
+                        <div id="codice_cp" class="textbox text_box_size">
+                            <p>Codice CP</p>
+                            <p id="valore_cp"></p>
+
+                        </div>
+                        <div id="costo_biglietto" class="textbox text_box_size">
+                            <p>Costo Biglietto</p>
+                            <p id="prezzo_biglietto"></p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@ let datiAnagrafici = document.getElementById("dati_anagrafici");
 let kmDaPercorrere = document.getElementById("km_da_percorrere");
 let etàPasseggero = document.getElementById("età_passeggero");
 let bottone = document.getElementById("bottone_genera");
-let body = document.getElementBy;
+let bottoneAnnulla = document.getElementById("bottone_annulla")
 
 const prezzoKM = 0.21;
 let prezzoFinaleBiglietto;
@@ -30,4 +30,10 @@ bottone.addEventListener("click", () => {
   document.getElementById(
     "prezzo_biglietto"
   ).innerHTML = `${prezzoFinaleBiglietto.toFixed(2)}€`;
+  let bigliettoVisibile = document.getElementById(`biglietto_container`)
+  bigliettoVisibile.classList.remove("invisible")
 });
+bottoneAnnulla.addEventListener ("click", ()=> {
+   let bigliettoInvisibile = document.getElementById("biglietto_container");
+bigliettoInvisibile.classList.add("invisible");
+})
