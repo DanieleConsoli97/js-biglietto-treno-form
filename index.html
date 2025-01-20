@@ -9,42 +9,46 @@
 </head>
 
 <body>
-    <form class="">
-        <input id="dati_anagrafici" type="text" value="" placeholder="Inserisci  Nome e Cognome">
-        <input id="km_da_percorrere" type="text" value="" placeholder="Inserisci i km da percorrere">
-        <input id="età_passeggero" type="text" value="" placeholder="Inserisci la tua età">
-        <input type="button" id="bottone_genera" value="Genera il boglietto">
+    <div class="container">
+        <form>
+            <input id="dati_anagrafici" type="text" value="" placeholder="Inserisci  Nome e Cognome">
+            <input id="km_da_percorrere" type="text" value="" placeholder="Inserisci i km da percorrere">
+            <input id="età_passeggero" type="text" value="" placeholder="Inserisci la tua età">
+            <input type="button" id="bottone_genera" value="Genera il boglietto">
+        </form>
 
-    </form>
-    <div class="biglietto_container">
-        <h4>Dettaglio Passeggeri</h4>
-        <div id="biglieto">
-            <div id="dati_anagrafici">
-                <h3>nome passeggero</h3>
-                <p id="nome_passeggero"></p>
-            </div>
+        <div class="biglietto_container">
+            <h4>Dettagli Passeggeri</h4>
+            <div id="biglietto">
 
-            <div id="dati_biglietto">
-                <div id="offerta">
-                    <p>Offerta</p>
-                    <p id="tipo_offerta"></p>
+                <div id="dati_anagrafici">
+                    <h3>nome passeggero</h3>
+                    <p id="nome_passeggero"></p>
                 </div>
-                <div id="carrozza">
-                    <p>Numero Carrozza</p>
-                    <p id="numero_carrozza"></p>
-                </div>
-                <div id="codice_cp">
-                    <p>Codice CP</p>
-                    <p id="valore_cp"></p>
 
-                </div>
-                <div id="costo_biglietto">
-                    <p>Costo Biglietto</p>
-                    <p id="prezzo_biglietto"></p>
+                <div id="dati_biglietto">
+                    <div id="offerta">
+                        <p>Offerta</p>
+                        <p id="tipo_offerta"></p>
+                    </div>
+                    <div id="carrozza">
+                        <p>Numero Carrozza</p>
+                        <p id="numero_carrozza"></p>
+                    </div>
+                    <div id="codice_cp">
+                        <p>Codice CP</p>
+                        <p id="valore_cp"></p>
+
+                    </div>
+                    <div id="costo_biglietto">
+                        <p>Costo Biglietto</p>
+                        <p id="prezzo_biglietto"></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <script src="script.js"></script>
 </body>

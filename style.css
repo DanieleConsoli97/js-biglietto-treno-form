@@ -1,0 +1,44 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:lightblue;
+}
+
+form{
+    text-align: center;
+}
+input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+  #dati_biglietto{
+    display: flex;
+    margin-top:30px;
+  }
+  #biglietto{
+    margin-top:30px;
+  }
+  #carrozza{
+    text-align: center;
+    margin: 0 10px;
+
+  }
+ #costo_biglietto{
+    margin: 0  10px ;
+ }
